@@ -1,0 +1,27 @@
+import random
+
+list_letters = []
+for j in range(10):
+    a = random.randint(1040,1103)
+    b = chr(a)
+    list_letters.append(b)
+
+list_numbers = []
+for e in range (10):
+    n=random.randint(0,10)
+    list_numbers.append(str(n))
+
+result_list = []
+for i in range (10):
+    result_list.append(list_numbers[i])
+    result_list.append(list_letters[i])
+
+reversed_list = []
+for i in range (10):
+    reversed_list.append(list_numbers[-i-1])
+    reversed_list.append(list_letters[i])
+
+result_reversed = ''.join(reversed_list)
+result_list = ''.join(result_list)
+print(result_list)
+print(result_reversed)
