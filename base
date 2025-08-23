@@ -2,3 +2,8 @@ n = int(input('Число для умножения: '))
 
 for i in range(1, 11):
     print(f"{n} * {i} = {n * i}")
+
+----------------------------------------------------
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+for index, months in enumerate(months, start=1):
+    print(index, months)
