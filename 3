@@ -1,0 +1,24 @@
+import numpy
+
+complete_matrix = grades = [
+    [5, 4, 3, 5],
+    [4, 4, 4, 4],
+    [3, 2, 5, 4],
+    [5, 5, 5, 5],
+    [2, 3, 2, 3]
+]
+
+arr = numpy.array(grades)
+row_mean = numpy.mean(grades, axis=1)
+column_mean = numpy.mean(grades, axis=0)
+row_mean = '/'.join(map(str, row_mean))
+column_mean = '/'.join(map(str, column_mean))
+means = numpy.mean(complete_matrix, 1)
+idx = numpy.argmax(means)
+idx2 = numpy.argmin(means)
+
+
+print(row_mean)
+print(column_mean)
+print(idx)
+print(idx2)
